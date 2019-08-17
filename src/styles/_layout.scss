@@ -1,0 +1,69 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: $heading-font;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: 1.4;
+}
+
+.img-wrap {
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+section {
+	padding: 100px 0;
+}
+
+@media only screen and (min-width: 576px) {
+	.container {
+		padding-right: 15px;
+		padding-left: 15px;
+		width: 540px;
+		max-width: 100%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.container {
+		padding-right: 15px;
+		padding-left: 15px;
+		width: 720px;
+		max-width: 100%;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.container {
+		padding-right: 15px;
+		padding-left: 15px;
+		width: 960px;
+		max-width: 100%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.container {
+		padding-right: 15px;
+		padding-left: 15px;
+		width: 1140px;
+		max-width: 100%;
+	}
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	position: relative;
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
