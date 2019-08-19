@@ -9,14 +9,14 @@ export default class About extends Component {
 			<section className="about-wrap" id="aboutme">
 				<div className="container">
 					<Row gutter={16} type="flex" justify="space-around" align="middle">
-						<Col className="gutter-row" span={12}>
+						<Col className="gutter-row" sm={12}>
 							<div className="gutter-box flex">
 								<div className="img-wrap">
 									<img src={Profile} alt="profile" />
 								</div>
 							</div>
 						</Col>
-						<Col className="gutter-row" span={12}>
+						<Col className="gutter-row" sm={12}>
 							<div className="info-text">
 								<div className="text-content">
 									<h3 className="title">Hi! call me Milan.</h3>

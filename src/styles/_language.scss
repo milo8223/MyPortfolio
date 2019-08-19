@@ -1,0 +1,60 @@
+.learn-wrap {
+	background: #ffffff;
+}
+
+.learn-slick {
+	.slick-content {
+		a {
+			.icon-wrap {
+				max-width: 100px;
+				margin: 0 auto;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 150px;
+				img {
+					filter: grayscale(100%);
+					@include customTransition(0.2s, linear);
+					&.html5 {
+						width: 90px;
+					}
+					&.css3 {
+						width: 70px;
+					}
+					&.js {
+						width: 80px;
+					}
+					&.react {
+						width: 90px;
+					}
+					&.vue {
+						width: 80px;
+					}
+					&.jquery {
+						width: 130px;
+					}
+					&.xd {
+						width: 78px;
+					}
+					&.sketch {
+						width: 85px;
+					}
+				}
+			}
+			.title {
+				text-align: center;
+				font-family: $heading-font;
+				color: $brand-color;
+				font-size: 16px;
+				font-weight: 600;
+			}
+			&:hover {
+				.icon-wrap {
+					img {
+						filter: grayscale(50%);
+					}
+				}
+			}
+		}
+	}
+}

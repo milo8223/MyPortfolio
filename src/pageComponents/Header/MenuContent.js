@@ -18,7 +18,8 @@ const MenuContent = (props) => {
 				<Anchor>
 					<Link href="#introduction" title="Introduction" />
 					<Link href="#aboutme" title="About Me" />
-					<Link href="#services" title="Service" />
+					<Link href="#services" title="Services" />
+					<Link href="#learn" title="Knowledge" />
 					<Link href="#portfolio" title="Portfolio" />
 				</Anchor>
 			</div>
