@@ -1,7 +1,6 @@
 .home-banner {
 	background: $brand-color;
 	.menu-wrap {
-		// background: #2c2c2c;
 		padding: 30px 40px;
 		z-index: 20;
 		display: flex;
@@ -26,7 +25,7 @@
 	}
 
 	.banner-content {
-		height: calc(100vh - 93px - 92px);
+		height: calc(100vh - 182px);
 		min-height: 350px;
 		display: flex;
 		justify-content: center;
