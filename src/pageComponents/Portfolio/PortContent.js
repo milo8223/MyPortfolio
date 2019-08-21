@@ -51,11 +51,19 @@ export default class PortContent extends Component {
 						return (
 							<div key={i}>
 								<div className="slick-content">
-									<a href={val.link} target="_blank">
-										<div className="icon-wrap img-wrap">{this.renderSwitch(val.img)}</div>
-										<div className="title">{val.title}</div>
-										<div className="caption">{val.caption}</div>
-									</a>
+									{val.link === '#' ? (
+										<a href="javascript:void(0)">
+											<div className="icon-wrap img-wrap">{this.renderSwitch(val.img)}</div>
+											<div className="title">{val.title}</div>
+											<div className="caption">{val.caption}</div>
+										</a>
+									) : (
+										<a href={val.link} target="_blank">
+											<div className="icon-wrap img-wrap">{this.renderSwitch(val.img)}</div>
+											<div className="title">{val.title}</div>
+											<div className="caption">{val.caption}</div>
+										</a>
+									)}
 								</div>
 							</div>
 						);
