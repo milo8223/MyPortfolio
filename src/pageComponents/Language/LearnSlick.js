@@ -49,7 +49,23 @@ export default class LearnSlick extends Component {
 			slidesToShow: 5,
 			slidesToScroll: 1,
 			autoplay: true,
-			pauseOnHover: true
+			pauseOnHover: true,
+			responsive: [
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 1
+					}
+				},
+				{
+					breakpoint: 425,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1
+					}
+				}
+			]
 		};
 		return (
 			<div className="learn-slick">

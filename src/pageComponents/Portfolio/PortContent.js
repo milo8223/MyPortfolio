@@ -6,6 +6,8 @@ import { slickdata } from './data';
 import bondor from '../../assets/images/bondor.jpg';
 import haynes from '../../assets/images/haynes.jpg';
 import captivation from '../../assets/images/captivation.jpg';
+import cdcmovies from '../../assets/images/cdcmovies.jpg';
+import cdcfood from '../../assets/images/cdcfood.jpg';
 
 export default class PortContent extends Component {
 	renderSwitch = (param) => {
@@ -14,6 +16,10 @@ export default class PortContent extends Component {
 				return <img className={param} src={haynes} alt="haynes" />;
 			case 'bondor':
 				return <img className={param} src={bondor} alt="bondor" />;
+			case 'cdcmovies':
+				return <img className={param} src={cdcmovies} alt="bondor" />;
+			case 'cdcfood':
+				return <img className={param} src={cdcfood} alt="bondor" />;
 
 			default:
 				return <img className={param} src={captivation} alt="captivation" />;
@@ -27,7 +33,16 @@ export default class PortContent extends Component {
 			speed: 800,
 			cssEase: 'linear',
 			slidesToShow: 3,
-			slidesToScroll: 1
+			slidesToScroll: 1,
+			responsive: [
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
 		};
 		return (
 			<div className="portfolio-slick">

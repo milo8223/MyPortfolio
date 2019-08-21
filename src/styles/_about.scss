@@ -33,3 +33,51 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 767px) {
+	.about-wrap {
+		.info-text {
+			margin-top: 80px;
+			text-align: center;
+			padding-left: 0;
+			.text-content {
+				margin-bottom: 50px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.about-wrap {
+		.info-text {
+			margin-top: 50px;
+			text-align: center;
+			.text-content {
+				margin-bottom: 30px;
+				padding: 0 25px;
+				.title {
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.about-wrap {
+		.info-text {
+			margin-top: 40px;
+			text-align: center;
+			.text-content {
+				margin-bottom: 20px;
+				.title {
+					font-size: 18px;
+					margin-bottom: 10px;
+				}
+				.description {
+					font-size: 13px;
+				}
+			}
+		}
+	}
+}

@@ -1,4 +1,5 @@
 .portfolio-wrap {
+	padding-bottom: 150px;
 	.portfolio-slick {
 		// margin: 0 25px;
 		button {
@@ -86,12 +87,72 @@
 					}
 				}
 				.title {
-					top: 45%;
+					top: 40%;
 					transform: translate3d(0, 0, 0);
 				}
 				.caption {
 					transform: translate3d(0, 0, 0);
 					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.portfolio-wrap {
+		.portfolio-slick {
+			.slick-content {
+				.img-wrap {
+					height: 200px;
+				}
+				.title {
+					font-size: 16px;
+					top: 65%;
+				}
+				.caption {
+					font-size: 12px;
+					line-height: 18px;
+					letter-spacing: 0;
+				}
+				&:hover {
+					.title {
+						top: 10%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.portfolio-wrap {
+		.portfolio-slick {
+			margin: 0 50px;
+		}
+	}
+}
+
+@media only screen and (max-width: 475px) {
+	.portfolio-wrap {
+		.portfolio-slick {
+			.slick-content {
+				.img-wrap {
+					height: 200px;
+				}
+				.title {
+					font-size: 16px;
+					top: 65%;
+				}
+				.caption {
+					font-size: 12px;
+					line-height: 18px;
+					letter-spacing: 0;
+				}
+				&:hover {
+					.title {
+						top: 10%;
+					}
 				}
 			}
 		}

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'antd';
 
 import AppIcon from '../../assets/icons/app.svg';
 import CodingIcon from '../../assets/icons/coding.svg';
@@ -37,7 +36,7 @@ export default class Services extends Component {
 					<div className="service-content">
 						{data.map((val, i) => {
 							return (
-								<div className="content-wrap">
+								<div className="content-wrap" key={i}>
 									<div className="icon-wrap img-wrap">{this.renderSwitch(val.img)}</div>
 									<div className="text-content">
 										<h3 className="title">{val.title}</h3>

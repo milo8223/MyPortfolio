@@ -21,6 +21,7 @@ const MenuContent = (props) => {
 					<Link href="#services" title="Services" />
 					<Link href="#learn" title="Knowledge" />
 					<Link href="#portfolio" title="Portfolio" />
+					<Link href="#contact" title="Contact" />
 				</Anchor>
 			</div>
 		</div>

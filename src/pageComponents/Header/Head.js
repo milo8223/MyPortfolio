@@ -3,11 +3,25 @@ import React, { Component } from 'react';
 import { Drawer } from 'antd';
 
 import Menu from '../../assets/images/menu.svg';
-import Logo from '../../assets/images/logo.jpeg';
+import MenuBlack from '../../assets/images/menu-black.svg';
+import Logo from '../../assets/icons/MYLOO.png';
 import MenuContent from './MenuContent';
 
 export default class Head extends Component {
-	state = { visible: false };
+	state = { visible: false, isTop: true };
+
+	componentDidMount() {
+		document.addEventListener('scroll', () => {
+			const isTop = window.scrollY < this.props.height;
+			if (isTop !== this.state.isTop) {
+				this.onScroll(isTop);
+			}
+		});
+	}
+
+	onScroll = (isTop) => {
+		this.setState({ isTop });
+	};
 
 	showDrawer = () => {
 		this.setState({
@@ -23,12 +37,12 @@ export default class Head extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<div class="menu-wrap">
-					<div class="logo-wrap img-wrap">
+				<div className={`menu-wrap ${this.state.isTop ? '' : 'not-top'}`}>
+					<div className="logo-wrap img-wrap">
 						<img src={Logo} alt="logo" />
 					</div>
 					<div className="img-wrap" onClick={this.showDrawer}>
-						<img src={Menu} alt="menu" />
+						{this.state.isTop ? <img src={Menu} alt="menu" /> : <img src={MenuBlack} alt="menu" />}
 					</div>
 				</div>
 				<Drawer
